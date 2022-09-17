@@ -17,8 +17,13 @@ print(lat, lon)
 
 API_KEY = 'b2223f1470ff11a36f948d1bc8e037d1'
 
-url = f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_KEY}'
+url = f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=imperial&appid={API_KEY}'
 
-response = requests.get(url).json()
+winfo = requests.get(url).json()
 
-print(response)
+winfo_id = (winfo['weather'][0]['id'])
+
+
+print(winfo_id)
+
+
