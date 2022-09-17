@@ -15,7 +15,7 @@ lon = g.lng
 #debug
 print(lat, lon)
 
-#API_KEY = 'insert api'
+API_KEY = 'insert api'
 
 url = f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=imperial&appid={API_KEY}'
 
