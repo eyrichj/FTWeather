@@ -15,7 +15,7 @@ lon = g.lng
 #debug
 print(lat, lon)
 
-API_KEY = 'b2223f1470ff11a36f948d1bc8e037d1'
+#API_KEY = 'insert api'
 
 url = f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=imperial&appid={API_KEY}'
 
@@ -23,8 +23,8 @@ winfo = requests.get(url).json()
 
 winfo_id = (winfo['weather'][0]['id'])
 
-if winfo_id >= (800):
-    import l8xx.py
+print(winfo)
+print(winfo_id)
 
 
 
