@@ -23,7 +23,12 @@ winfo = requests.get(url).json()
 
 winfo_id = (winfo['weather'][0]['id'])
 
+if winfo_id >= (800):
+    import l8xx.py
 
-print(winfo_id)
+
+
+
+
 
 
