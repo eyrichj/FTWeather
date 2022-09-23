@@ -3,9 +3,11 @@
 # via geocoder and presents the weather in a cold and salty manor.
 # Developed by Joe Gossett
 
-# Imports
-import requests, json
+
+# Imports this is a test
 import geocoder
+import json
+import requests
 
 # geocoder
 g = geocoder.ip('me')
@@ -15,7 +17,7 @@ lon = g.lng
 #debug
 print(lat, lon)
 
-API_KEY = 'insert api'
+API_KEY = 'b2223f1470ff11a36f948d1bc8e037d1'
 
 url = f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=imperial&appid={API_KEY}'
 
