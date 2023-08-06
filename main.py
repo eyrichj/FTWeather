@@ -1,7 +1,7 @@
 # Fuck the weather is a python program that
 # scrapes data from the openweathermap api using your current latitude and longitude
 # via geocoder and presents the weather in a cold and salty manor.
-# Developed by Joe Gossett
+# Developed by Joe Eyrich
 
 
 # Imports this is a test
